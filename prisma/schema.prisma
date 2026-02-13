@@ -1,0 +1,20 @@
+// prisma/schema.prisma
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+
+model Testimonial {
+  id        Int      @id @default(autoincrement())
+  name      String
+  country   String
+  quote     String
+  rating    Int?     // 1-5 stars
+  avatar    String?  // URL to avatar image
+  stay      String?  // Tour package name
+  createdAt DateTime @default(now())
+}
