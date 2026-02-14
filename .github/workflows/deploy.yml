@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -24,7 +24,7 @@ jobs:
       - name: Generate Prisma client
         run: npx prisma generate
 
-      - name: Create .env file
+      - name: Create .env file (for build validation only)
         run: |
           echo "DATABASE_URL=${{ secrets.DATABASE_URL }}" >> .env
           echo "SMTP_HOST=${{ secrets.SMTP_HOST }}" >> .env
@@ -34,20 +34,42 @@ jobs:
           echo "SMTP_FROM_EMAIL=${{ secrets.SMTP_FROM_EMAIL }}" >> .env
           echo "RECIPIENT_EMAIL=${{ secrets.RECIPIENT_EMAIL }}" >> .env
 
-      - name: Build application
+      - name: Build application (CI validation)
         run: npm run build
 
-      - name: Deploy to EC2
+      - name: Deploy to EC2 via SSH
         uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
+            set -e
+
+            echo "🚀 Starting deployment..."
             cd ~/travelbhutanfs
-            git pull origin main
+
+            echo "📥 Syncing latest code..."
+            git fetch origin main
+            git reset --hard origin/main
+            git clean -fd
+
+            echo "📦 Installing dependencies..."
             npm ci
+
+            echo "🔧 Generating Prisma client..."
             npx prisma generate
+
+            echo "🗄️ Running database migrations..."
+            npx prisma migrate deploy
+
+            echo "🏗️ Building Next.js app..."
             npm run build
-            pm2 restart travelbhutan
+
+            echo "🔄 Restarting application with PM2..."
+            pm2 restart travelbhutan || pm2 start npm --name travelbhutan -- start
+
+            echo "🌐 Restarting Nginx..."
             sudo systemctl restart nginx
+
+            echo "✅ Deployment completed successfully!"
