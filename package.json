@@ -6,8 +6,10 @@
     "seed": "node prisma/seed.js",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "start": "npx prisma generate && next start",
+    "lint": "eslint",
+    "postinstall": "npx prisma generate",
+    "vercel-build": "npx prisma generate && next build"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

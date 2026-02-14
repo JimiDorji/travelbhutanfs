@@ -2,7 +2,7 @@ name: Deploy to EC2
 
 on:
   push:
-    branches: [main, master] # Triggers on push to main/master
+    branches: [main, master]
 
 jobs:
   deploy:
@@ -19,7 +19,10 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+
+      - name: Generate Prisma client
+        run: npx prisma generate
 
       - name: Create .env file
         run: |
@@ -44,6 +47,7 @@ jobs:
             cd ~/travelbhutanfs
             git pull origin main
             npm ci
+            npx prisma generate
             npm run build
             pm2 restart travelbhutan
             sudo systemctl restart nginx
