@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 
 // Separate metadata export (without viewport)
 export const metadata = {
-  title: "TravelBhutan",
+  title: "alpineodyssey - TravelBhutan",
   description:
-    "Explore the Beauty of Bhutan with TravelBhutan - Your Ultimate Guide to the Land of the Thunder Dragon.",
+    "Explore the Beauty of Bhutan with alpineodyssey - Your Ultimate Guide to the Land of the Thunder Dragon.",
 };
 
 // Move viewport to its own export (required in Next.js 14+)
