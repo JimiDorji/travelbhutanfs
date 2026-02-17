@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef, useState, useEffect } from "react";
-import emailjs from "@emailjs/browser";
 
 export default function Contact() {
     const formRef = useRef(null);
@@ -9,7 +8,6 @@ export default function Contact() {
 
     const [loading, setLoading] = useState(false);
     const [status, setStatus] = useState(null);
-    const [focusedField, setFocusedField] = useState(null);
     const [particles, setParticles] = useState([]);
 
     /* Hydration-safe particles */
@@ -51,7 +49,7 @@ export default function Contact() {
                 name: `${formData.get("first_name")} ${formData.get("last_name")}`,
             };
 
-            // 1. Send email via SMTP API
+            // Send email (agency + auto-reply handled in API)
             const emailResponse = await fetch('/api/send-email', {
                 method: 'POST',
                 headers: {
@@ -64,7 +62,7 @@ export default function Contact() {
                 throw new Error('Failed to send email');
             }
 
-            // 2. Save to database via API
+            // Save inquiry to database
             await fetch('/api/inquiries', {
                 method: 'POST',
                 headers: {
@@ -166,17 +164,29 @@ export default function Contact() {
                             className="mt-4 w-full rounded-xl border border-gray-200 px-4 py-3.5 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-400/20 outline-none"
                         />
 
+                        {/* Date Inputs with Labels */}
                         <div className="mt-4 grid gap-4 sm:grid-cols-2">
-                            <input
-                                type="date"
-                                name="start_date"
-                                className="rounded-xl border border-gray-200 px-4 py-3 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-400/20 outline-none"
-                            />
-                            <input
-                                type="date"
-                                name="end_date"
-                                className="rounded-xl border border-gray-200 px-4 py-3 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-400/20 outline-none"
-                            />
+                            <div className="flex flex-col">
+                                <label className="mb-1 text-sm font-medium text-slate-700">
+                                    Start Date
+                                </label>
+                                <input
+                                    type="date"
+                                    name="start_date"
+                                    className="rounded-xl border border-gray-200 px-4 py-3 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-400/20 outline-none"
+                                />
+                            </div>
+
+                            <div className="flex flex-col">
+                                <label className="mb-1 text-sm font-medium text-slate-700">
+                                    End Date
+                                </label>
+                                <input
+                                    type="date"
+                                    name="end_date"
+                                    className="rounded-xl border border-gray-200 px-4 py-3 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-400/20 outline-none"
+                                />
+                            </div>
                         </div>
 
                         <textarea
