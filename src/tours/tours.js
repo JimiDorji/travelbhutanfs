@@ -216,7 +216,7 @@ export default function Tours() {
                 </header>
 
                 {/* Category Filters */}
-                <div className="mb-12 flex flex-wrap justify-center gap-3">
+                <div className="mb-14 flex flex-wrap justify-center gap-3">
                     {CATEGORIES.map((cat) => {
                         const isActive = activeCategory === cat.id;
                         return (
@@ -226,16 +226,23 @@ export default function Tours() {
                                     setActiveCategory(cat.id);
                                     setVisibleCount(6);
                                 }}
-                                className={`rounded-full px-5 py-2 text-sm font-medium transition ${isActive
-                                    ? "bg-cyan-600 text-white shadow-lg"
-                                    : "bg-white/5 text-white/70 hover:bg-white/10"
+                                className={`relative rounded-full px-6 py-2 text-sm font-medium transition-all duration-300 backdrop-blur-md
+        ${isActive
+                                        ? "bg-gradient-to-r from-cyan-500 to-cyan-600 text-white shadow-lg shadow-cyan-500/30 scale-105"
+                                        : "bg-white/5 text-white/70 hover:bg-white/10 hover:text-white"
                                     }`}
                             >
                                 {cat.label}
+
+                                {/* Active underline glow */}
+                                {isActive && (
+                                    <span className="absolute inset-x-4 -bottom-1 h-[2px] rounded-full bg-cyan-400 blur-sm" />
+                                )}
                             </button>
                         );
                     })}
                 </div>
+
 
                 {/* Tours Grid */}
                 <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -250,15 +257,16 @@ export default function Tours() {
                                 className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:bg-white/10"
                             >
                                 {/* Image */}
-                                <div className="relative h-52 overflow-hidden">
+                                <div className="relative h-64 overflow-hidden">
                                     <img
                                         src={tour.image}
                                         alt={tour.title}
-                                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                        className="h-full w-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
                                         loading="lazy"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
                                 </div>
+
 
                                 {/* Content */}
                                 <div className="p-5">
@@ -281,6 +289,7 @@ export default function Tours() {
                                             {tour.rating}
                                         </span>
                                     </div>
+
 
                                     {/* Highlights */}
                                     <div className="mb-4 flex flex-wrap gap-2">
