@@ -33,7 +33,10 @@ const staggerContainer = {
     }
 };
 
-const scaleOnHover = {
+// Combined variants for items that need both fade and hover effects
+const itemWithHover = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0 },
     hover: { scale: 1.02, transition: { duration: 0.3 } }
 };
 
@@ -290,22 +293,23 @@ export default function Testimonials() {
                     </motion.div>
                 </motion.div>
 
-                {/* Stats Grid */}
+                {/* Stats Grid - FIXED */}
                 <motion.div
                     initial="hidden"
                     animate="show"
                     variants={staggerContainer}
                     className="mb-20 grid grid-cols-2 gap-6 lg:grid-cols-4"
                 >
-                    {stats.map((stat, index) => {
+                    {stats.map((stat) => {
                         const Icon = stat.icon;
 
                         return (
                             <motion.div
                                 key={stat.label}
-                                variants={fadeInUp}
+                                variants={itemWithHover}
+                                initial="hidden"
+                                animate="show"
                                 whileHover="hover"
-                                variants={scaleOnHover}
                                 className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
                             >
                                 <div className={`absolute inset-0 bg-gradient-to-br ${stat.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
@@ -328,7 +332,7 @@ export default function Testimonials() {
                     })}
                 </motion.div>
 
-                {/* Featured Testimonials */}
+                {/* Featured Testimonials - FIXED */}
                 {featuredTestimonials.length > 0 && (
                     <motion.div
                         initial="hidden"
@@ -348,11 +352,12 @@ export default function Testimonials() {
                             {featuredTestimonials.map((testimonial) => (
                                 <motion.article
                                     key={testimonial.id}
-                                    variants={fadeInUp}
+                                    variants={itemWithHover}
+                                    initial="hidden"
+                                    animate="show"
+                                    whileHover="hover"
                                     onHoverStart={() => setHoveredCard(testimonial.id)}
                                     onHoverEnd={() => setHoveredCard(null)}
-                                    whileHover="hover"
-                                    variants={scaleOnHover}
                                     onClick={() => setSelectedTestimonial(testimonial)}
                                     className="group relative cursor-pointer overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/5 to-white/10 p-8 backdrop-blur-xl transition-all duration-500 hover:shadow-2xl"
                                 >
@@ -425,7 +430,7 @@ export default function Testimonials() {
                     </motion.div>
                 )}
 
-                {/* Regular Testimonials Grid */}
+                {/* Regular Testimonials Grid - FIXED */}
                 <motion.div
                     initial="hidden"
                     animate="show"
@@ -435,9 +440,10 @@ export default function Testimonials() {
                     {regularTestimonials.map((testimonial) => (
                         <motion.article
                             key={testimonial.id}
-                            variants={fadeInUp}
+                            variants={itemWithHover}
+                            initial="hidden"
+                            animate="show"
                             whileHover="hover"
-                            variants={scaleOnHover}
                             onClick={() => setSelectedTestimonial(testimonial)}
                             className="group relative cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:shadow-xl"
                         >
@@ -502,17 +508,23 @@ export default function Testimonials() {
                     variants={fadeInUp}
                     className="mt-20 flex flex-col items-center justify-center gap-6 sm:flex-row"
                 >
-                    <button className="group relative overflow-hidden rounded-2xl bg-gradient-to-r from-cyan-600 to-blue-600 px-10 py-5 text-lg font-semibold text-white shadow-xl shadow-cyan-500/30 transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+                    <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="group relative overflow-hidden rounded-2xl bg-gradient-to-r from-cyan-600 to-blue-600 px-10 py-5 text-lg font-semibold text-white shadow-xl shadow-cyan-500/30 transition-all duration-500 hover:shadow-2xl"
+                    >
                         <span className="relative z-10 flex items-center gap-3">
                             <MessageCircle className="h-5 w-5" />
                             Read More Stories
                             <ChevronRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                         </span>
                         <div className="absolute inset-0 bg-gradient-to-r from-cyan-700 to-blue-700 opacity-0 transition-opacity group-hover:opacity-100" />
-                    </button>
+                    </motion.button>
 
-                    <a
+                    <motion.a
                         href="/share-experience"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
                         className="group relative overflow-hidden rounded-2xl border-2 border-cyan-500/30 bg-transparent px-10 py-5 text-lg font-semibold text-white backdrop-blur-sm transition-all duration-500 hover:scale-105 hover:border-cyan-400 hover:shadow-xl"
                     >
                         <span className="relative z-10 flex items-center gap-3">
@@ -520,7 +532,7 @@ export default function Testimonials() {
                             Share Your Journey
                             <ExternalLink className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                         </span>
-                    </a>
+                    </motion.a>
                 </motion.div>
 
                 {/* Trust Badge */}
