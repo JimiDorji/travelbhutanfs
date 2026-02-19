@@ -3,7 +3,7 @@ const nextConfig = {
   // output: 'export',
   trailingSlash: true,
   images: {
-    domains: ['images.unsplash.com', 'amen-api.flamingoitstudio.net'],
+    domains: ['images.unsplash.com', 'amen-api.flamingoitstudio.net', "www.amenbhutan.com"],
   },
 }
 
