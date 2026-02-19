@@ -286,11 +286,7 @@ export default function ToursSection({
                                         {/* Price & CTA */}
                                         <div className="flex items-center justify-between border-t border-gray-100 pt-4">
                                             <div>
-                                                <p className="text-xs text-gray-500">Starting from</p>
-                                                <p className="text-2xl font-bold text-gray-900">
-                                                    ${tour.price}
-                                                    <span className="text-sm font-normal text-gray-500">/person</span>
-                                                </p>
+                                                <p className="text-xs text-gray-500">Start Booking</p>
                                             </div>
 
                                             <Link

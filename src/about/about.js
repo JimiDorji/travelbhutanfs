@@ -64,7 +64,7 @@ export default function About() {
         {
             title: "Local Expertise",
             text: "Guided by Bhutanese professionals with deep cultural and historical knowledge spanning generations.",
-            stat: "15+ Years",
+            stat: "4+ Years",
             color: "from-cyan-500 to-blue-500",
             icon: Compass,
             gradient: "from-cyan-400 to-blue-400"
@@ -122,13 +122,13 @@ export default function About() {
         {
             name: "Jigme Dorji",
             role: "Founder & Lead Guide",
-            bio: "With over 15 years of Himalayan exploration, Jigme has led countless expeditions across Bhutan's most remote valleys.",
+            bio: "With over 4 years of Himalayan exploration, Jigme has led countless expeditions across Bhutan's most remote valleys.",
             image: "/team/img/jigme.jpeg",
             expertise: ["Cultural Heritage", "Expedition Leadership", "Conservation"],
             color: "from-cyan-500 to-blue-500"
         },
         {
-            name: "Dechen Wangmo",
+            name: "Dechen Dorji",
             role: "Senior Cultural Guide",
             bio: "A master storyteller and historian, Dechen brings Bhutan's living traditions to life through immersive cultural experiences.",
             image: "/team/img/dechen.jpeg",
@@ -478,7 +478,7 @@ export default function About() {
                                                 <div className="mt-6 w-full border-t border-white/10 pt-4">
                                                     <div className="flex items-center justify-center gap-2 text-sm">
                                                         <Calendar className="h-4 w-4 text-cyan-400" />
-                                                        <span className="text-white/60">15+ Years Experience</span>
+                                                        <span className="text-white/60">4+ Years Experience</span>
                                                     </div>
                                                 </div>
                                             </div>

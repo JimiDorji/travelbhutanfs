@@ -164,7 +164,7 @@ export default function Testimonials() {
         { value: "500+", label: "Happy Travelers", icon: Users, color: "from-cyan-500 to-blue-500" },
         { value: "4.9★", label: "Average Rating", icon: Star, color: "from-amber-500 to-orange-500" },
         { value: "98%", label: "Would Recommend", icon: Heart, color: "from-rose-500 to-red-500" },
-        { value: "15+", label: "Years Experience", icon: Award, color: "from-purple-500 to-pink-500" }
+        { value: "4+", label: "Years Experience", icon: Award, color: "from-purple-500 to-pink-500" }
     ];
 
     const tripTypes = [
