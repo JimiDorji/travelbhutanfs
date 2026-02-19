@@ -492,12 +492,14 @@ export default function Contact() {
                                 </div>
 
                                 {/* Submit Button */}
-                                <motion.button
-                                    type="submit"
-                                    disabled={loading}
-                                    whileHover="hover"
-                                    variants={scaleOnHover}
-                                    className="group relative mt-8 w-full overflow-hidden rounded-xl bg-gradient-to-r from-cyan-600 to-blue-700 px-8 py-4 font-semibold text-white shadow-lg shadow-cyan-600/25 transition-all duration-300 hover:shadow-xl disabled:opacity-50"
+                                <motion.a
+                                    key={item.label}
+                                    href={item.link}
+                                    target={item.link ? "_blank" : undefined}
+                                    rel={item.link ? "noopener noreferrer" : undefined}
+                                    variants={fadeInUp}
+                                    whileHover={{ scale: 1.02 }}  // ✅ Use direct hover animation
+                                    className="group relative overflow-hidden rounded-2xl bg-white/5 p-6 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-white/10"
                                 >
                                     <span className="relative z-10 flex items-center justify-center gap-2">
                                         {loading ? (
@@ -592,19 +594,50 @@ export default function Contact() {
                         </motion.div>
 
                         {/* Map */}
+                        {/* Contact Cards - Fixed */}
                         <motion.div
-                            variants={fadeInUp}
-                            whileHover="hover"
-                            variants={scaleOnHover}
-                            className="overflow-hidden rounded-3xl border border-white/10 shadow-2xl"
+                            initial="hidden"
+                            animate="show"
+                            variants={staggerContainer}
+                            className="mt-16 grid gap-4 sm:grid-cols-3"
                         >
-                            <iframe
-                                title="Bhutan Office Map"
-                                src="https://www.google.com/maps?q=Thimphu,Bhutan&output=embed"
-                                className="h-96 w-full border-0"
-                                loading="lazy"
-                                allowFullScreen
-                            />
+                            {contactInfo.map((item, index) => {
+                                const Icon = item.icon;
+                                const Wrapper = item.href ? 'a' : 'div';
+
+                                return (
+                                    <motion.div
+                                        key={item.label}
+                                        variants={fadeInUp}
+                                        whileHover={{ y: -4, scale: 1.02 }}
+                                        className="group"
+                                    >
+                                        <Wrapper
+                                            href={item.href}
+                                            className="relative block overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/10 p-6 backdrop-blur-sm transition-all duration-500 hover:shadow-xl"
+                                        >
+                                            <div className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
+
+                                            <div className="relative z-10">
+                                                <div className={`inline-flex rounded-xl bg-gradient-to-br ${item.color} p-3`}>
+                                                    <Icon className="h-5 w-5 text-white" />
+                                                </div>
+                                                <p className="mt-3 text-xs font-medium text-blue-200/60">
+                                                    {item.label}
+                                                </p>
+                                                <p className="mt-1 text-sm font-semibold text-white">
+                                                    {item.value}
+                                                </p>
+                                                {item.sub && (
+                                                    <p className="mt-1 text-xs text-blue-200/40">
+                                                        {item.sub}
+                                                    </p>
+                                                )}
+                                            </div>
+                                        </Wrapper>
+                                    </motion.div>
+                                );
+                            })}
                         </motion.div>
 
                         {/* Features */}
