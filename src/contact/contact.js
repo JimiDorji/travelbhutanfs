@@ -18,7 +18,6 @@ import {
     Shield,
     Heart
 } from "lucide-react";
-import Image from "next/image";
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
@@ -36,7 +35,10 @@ const staggerContainer = {
     }
 };
 
-const scaleOnHover = {
+// Combined variants for items that need both fade and hover effects
+const itemWithHover = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0 },
     hover: { scale: 1.02, transition: { duration: 0.3 } }
 };
 
@@ -155,21 +157,21 @@ export default function Contact() {
             icon: MapPin,
             label: "Visit Us",
             value: "Olakha, Thimphu, Bhutan",
-            link: "https://maps.google.com/?q=Thimphu,Bhutan",
+            href: "https://maps.google.com/?q=Thimphu,Bhutan",
             color: "from-cyan-500 to-blue-500"
         },
         {
             icon: Mail,
             label: "Email Us",
             value: "alpineodyssey.bt@gmail.com",
-            link: "mailto:alpineodyssey.bt@gmail.com",
+            href: "mailto:alpineodyssey.bt@gmail.com",
             color: "from-emerald-500 to-green-500"
         },
         {
             icon: Phone,
             label: "Call Us",
             value: "+975 77652012",
-            link: "tel:+97577652012",
+            href: "tel:+97577652012",
             color: "from-purple-500 to-pink-500"
         },
         {
@@ -491,15 +493,13 @@ export default function Contact() {
                                     )}
                                 </div>
 
-                                {/* Submit Button */}
-                                <motion.a
-                                    key={item.label}
-                                    href={item.link}
-                                    target={item.link ? "_blank" : undefined}
-                                    rel={item.link ? "noopener noreferrer" : undefined}
-                                    variants={fadeInUp}
-                                    whileHover={{ scale: 1.02 }}  // ✅ Use direct hover animation
-                                    className="group relative overflow-hidden rounded-2xl bg-white/5 p-6 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-white/10"
+                                {/* Submit Button - FIXED */}
+                                <motion.button
+                                    type="submit"
+                                    disabled={loading}
+                                    whileHover={{ scale: 1.02 }}
+                                    whileTap={{ scale: 0.98 }}
+                                    className="group relative mt-8 w-full overflow-hidden rounded-xl bg-gradient-to-r from-cyan-600 to-blue-700 px-8 py-4 font-semibold text-white shadow-lg shadow-cyan-600/25 transition-all duration-300 hover:shadow-xl disabled:opacity-50"
                                 >
                                     <span className="relative z-10 flex items-center justify-center gap-2">
                                         {loading ? (
@@ -558,20 +558,21 @@ export default function Contact() {
                         variants={staggerContainer}
                         className="space-y-8"
                     >
-                        {/* Contact Cards */}
+                        {/* Contact Cards - FIXED */}
                         <motion.div variants={staggerContainer} className="grid gap-4 sm:grid-cols-2">
-                            {contactInfo.map((item, index) => {
+                            {contactInfo.map((item) => {
                                 const Icon = item.icon;
 
                                 return (
                                     <motion.a
                                         key={item.label}
-                                        href={item.link}
-                                        target={item.link ? "_blank" : undefined}
-                                        rel={item.link ? "noopener noreferrer" : undefined}
-                                        variants={fadeInUp}
+                                        href={item.href}
+                                        target={item.href?.startsWith('http') ? "_blank" : undefined}
+                                        rel={item.href?.startsWith('http') ? "noopener noreferrer" : undefined}
+                                        variants={itemWithHover}
+                                        initial="hidden"
+                                        animate="show"
                                         whileHover="hover"
-                                        variants={scaleOnHover}
                                         className="group relative overflow-hidden rounded-2xl bg-white/5 p-6 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-white/10"
                                     >
                                         <div className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
@@ -594,50 +595,18 @@ export default function Contact() {
                         </motion.div>
 
                         {/* Map */}
-                        {/* Contact Cards - Fixed */}
                         <motion.div
-                            initial="hidden"
-                            animate="show"
-                            variants={staggerContainer}
-                            className="mt-16 grid gap-4 sm:grid-cols-3"
+                            variants={fadeInUp}
+                            whileHover={{ scale: 1.02 }}
+                            className="overflow-hidden rounded-3xl border border-white/10 shadow-2xl"
                         >
-                            {contactInfo.map((item, index) => {
-                                const Icon = item.icon;
-                                const Wrapper = item.href ? 'a' : 'div';
-
-                                return (
-                                    <motion.div
-                                        key={item.label}
-                                        variants={fadeInUp}
-                                        whileHover={{ y: -4, scale: 1.02 }}
-                                        className="group"
-                                    >
-                                        <Wrapper
-                                            href={item.href}
-                                            className="relative block overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-white/10 p-6 backdrop-blur-sm transition-all duration-500 hover:shadow-xl"
-                                        >
-                                            <div className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
-
-                                            <div className="relative z-10">
-                                                <div className={`inline-flex rounded-xl bg-gradient-to-br ${item.color} p-3`}>
-                                                    <Icon className="h-5 w-5 text-white" />
-                                                </div>
-                                                <p className="mt-3 text-xs font-medium text-blue-200/60">
-                                                    {item.label}
-                                                </p>
-                                                <p className="mt-1 text-sm font-semibold text-white">
-                                                    {item.value}
-                                                </p>
-                                                {item.sub && (
-                                                    <p className="mt-1 text-xs text-blue-200/40">
-                                                        {item.sub}
-                                                    </p>
-                                                )}
-                                            </div>
-                                        </Wrapper>
-                                    </motion.div>
-                                );
-                            })}
+                            <iframe
+                                title="Bhutan Office Map"
+                                src="https://www.google.com/maps?q=Thimphu,Bhutan&output=embed"
+                                className="h-80 w-full border-0"
+                                loading="lazy"
+                                allowFullScreen
+                            />
                         </motion.div>
 
                         {/* Features */}
@@ -652,9 +621,10 @@ export default function Contact() {
                                     <motion.div
                                         key={feature.title}
                                         variants={fadeInUp}
-                                        className="text-center"
+                                        whileHover={{ scale: 1.05 }}
+                                        className="text-center group cursor-default"
                                     >
-                                        <div className="inline-flex rounded-xl bg-gradient-to-r from-cyan-500/20 to-blue-500/20 p-2.5">
+                                        <div className="inline-flex rounded-xl bg-gradient-to-r from-cyan-500/20 to-blue-500/20 p-2.5 transition-all duration-300 group-hover:from-cyan-500/30 group-hover:to-blue-500/30">
                                             <Icon className="h-5 w-5 text-cyan-400" />
                                         </div>
                                         <h4 className="mt-2 text-sm font-semibold text-white">
