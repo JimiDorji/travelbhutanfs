@@ -426,7 +426,6 @@ export default function About() {
                                             key={member.name}
                                             variants={fadeInUp}
                                             whileHover="hover"
-                                            variants={scaleOnHover}
                                             className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/5 to-white/10 p-8 backdrop-blur-sm border border-white/10"
                                         >
                                             {/* Background Gradient */}
