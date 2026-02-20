@@ -8,7 +8,7 @@ const tourdata = [
         duration: "3 Days",
         travelers: "2-8",
         rating: "4.8",
-        image: "https://amen-api.flamingoitstudio.net/media/package/banner/thimphu-festivals.jpg",
+        image: "/tour/img/thimphu-festivals.avif",
         highlights: ["Tiger's Nest Monastery", "Rinpung Dzong", "Ta Dzong Museum", "Paro Valley"],
         itinerary: [
             {
@@ -88,7 +88,7 @@ const tourdata = [
         duration: "4 Days",
         travelers: "2-8",
         rating: "4.9",
-        image: "https://amen-api.flamingoitstudio.net/media/featured/unique-bhutan-tour.jpg",
+        image: "/tour/img/unique-bhutan-tour.avif",
         highlights: ["Bhutan Gate", "Thimphu Dzong", "Punakha Valley", "Buddha Dordenma"],
         itinerary: [
             {
@@ -297,7 +297,7 @@ const tourdata = [
         duration: "5 Days",
         travelers: "2-8",
         rating: "4.9",
-        image: "https://amen-api.flamingoitstudio.net/media/package/banner/incredible-bhutan.jpg",
+        image: "/tour/img/incredible-bhutan.avif",
         highlights: ["Punakha Dzong", "Hike to Druk Wangyal", "Dochula Pass", "Chimi Lhakhang"],
         itinerary: [
             {
@@ -554,7 +554,7 @@ const tourdata = [
         duration: "6 Days",
         travelers: "2-8",
         rating: "4.8",
-        image: "https://amen-api.flamingoitstudio.net/media/package/banner/bhutan-cultural-tour.jpg",
+        image: "/tour/img/bhutan-cultural-tour.avif",
         highlights: ["Tiger's Nest Monastery", "Rinpung Dzong", "Ta Dzong Museum", "Paro Valley"],
         itinerary: [
             {
@@ -692,7 +692,7 @@ const tourdata = [
         duration: "9 Days",
         travelers: "2-8",
         rating: "4.8",
-        image: "https://amen-api.flamingoitstudio.net/media/package/banner/cultural-with-nature-bhutantour.jpg",
+        image: "/tour/img/cultural-with-nature-bhutantour.avif",
         highlights: ["Tiger's Nest Monastery", "Rinpung Dzong", "Ta Dzong Museum", "Paro Valley"],
         itinerary: [
             {
@@ -856,7 +856,7 @@ const tourdata = [
         duration: "8 Days",
         travelers: "2-8",
         rating: "4.8",
-        image: "    https://amen-api.flamingoitstudio.net/media/package/banner/incredible-bhutan.jpg",
+        image: "/tour/img/incredible-bhutan.avif",
         highlights: ["Tiger's Nest Monastery", "Rinpung Dzong", "Ta Dzong Museum", "Paro Valley"],
         itinerary: [
             {
@@ -1001,7 +1001,7 @@ const tourdata = [
         duration: "17 Days",
         travelers: "2-8",
         rating: "4.8",
-        image: "https://amen-api.flamingoitstudio.net/media/package/banner/laya-gasa-trek-17-day-adventure.jpg",
+        image: "/tour/img/laya-gasa-trek-17-day-adventure.avif",
         highlights: ["Tiger's Nest Monastery", "Rinpung Dzong", "Ta Dzong Museum", "Paro Valley"],
         itinerary: [
             {
@@ -1264,7 +1264,7 @@ const tourdata = [
         duration: "8 Days",
         travelers: "2-8",
         rating: "4.8",
-        image: "    https://amen-api.flamingoitstudio.net/media/package/banner/druk-path-trekking.jpg",
+        image: "/tour/img/druk-path-trekking.avif",
         highlights: ["Tiger's Nest Monastery", "Rinpung Dzong", "Ta Dzong Museum", "Paro Valley"],
         itinerary: [
             {
@@ -1417,7 +1417,7 @@ const tourdata = [
         duration: "10 Days",
         travelers: "2-8",
         rating: "4.8",
-        image: "https://amen-api.flamingoitstudio.net/media/package/banner/10-days-merak-sakteng-trek.jpg",
+        image: "/tour/img/10-days-merak-sakteng-trek.avif",
         highlights: ["Tiger's Nest Monastery", "Rinpung Dzong", "Ta Dzong Museum", "Paro Valley"],
         itinerary: [
             {
@@ -1575,7 +1575,7 @@ const tourdata = [
         duration: "12 Days",
         travelers: "2-8",
         rating: "4.8",
-        image: "https://amen-api.flamingoitstudio.net/media/package/banner/bumthang-trek.jpg",
+        image: "/tour/img/bumthang-trek.avif",
         highlights: ["Tiger's Nest Monastery", "Rinpung Dzong", "Ta Dzong Museum", "Paro Valley"],
         itinerary: [
             {
@@ -1782,7 +1782,7 @@ const tourdata = [
         "duration": "9 Days",
         "travelers": "2-8",
         "rating": "4.9",
-        "image": "https://amen-api.flamingoitstudio.net/media/package/banner/paro-festival.jpg",
+        "image": "/tour/img/paro-festival.avif",
         "highlights": [
             "Paro Tshechu Festival",
             "Tiger’s Nest Monastery",
@@ -2026,7 +2026,7 @@ const tourdata = [
         "duration": "7 Days",
         "travelers": "2-8",
         "rating": "4.9",
-        "image": "https://amen-api.flamingoitstudio.net/media/package/banner/thimphu-festivals.jpg",
+        "image": "/tour/img/thimphu-festivals.avif",
         "highlights": [
             "Thimphu Tshechu Festival",
             "Tiger’s Nest Monastery",
@@ -2251,7 +2251,7 @@ const tourdata = [
         "duration": "8 Days",
         "travelers": "2-8",
         "rating": "4.9",
-        "image": "https://amen-api.flamingoitstudio.net/media/package/banner/punakha-festival.jpg",
+        "image": "/tour/img/punakha-festival.avif",
         "highlights": [
             "Punakha Tshechu Festival",
             "Punakha Dzong",
@@ -2481,7 +2481,7 @@ const tourdata = [
         "duration": "11 Days",
         "travelers": "2-8",
         "rating": "4.9",
-        "image": "https://amen-api.flamingoitstudio.net/media/package/banner/bumthang-nimalung-festival.jpg",
+        "image": "/tour/img/bumthang-nimalung-festival.avif",
         "highlights": [
             "Nimalung Tshechu Festival",
             "Tiger’s Nest Monastery",
@@ -2755,7 +2755,7 @@ const tourdata = [
         "duration": "12 Days",
         "travelers": "2-10",
         "rating": "4.9",
-        "image": "https://amen-api.flamingoitstudio.net/media/package/banner/jomolhari-trek.jpg",
+        "image": "/tour/img/jomolhari-trek.avif",
         "highlights": [
             "Jomolhari Base Camp",
             "Tiger’s Nest Monastery",
@@ -3021,7 +3021,7 @@ const tourdata = [
         "duration": "8 Days",
         "travelers": "2-12",
         "rating": "4.8",
-        "image": "https://amen-api.flamingoitstudio.net/media/package/banner/black-necked-crane-festival.jpg",
+        "image": "/tour/img/black-necked-crane-festival.avif",
         "highlights": [
             "Black-Necked Crane Festival at Gangtey",
             "Tiger’s Nest Monastery Hike",
@@ -3271,7 +3271,7 @@ const tourdata = [
         "duration": "30 Days",
         "travelers": "2-8",
         "rating": "5.0",
-        "image": "https://amen-api.flamingoitstudio.net/media/package/banner/snowman-trekking-in-bhutan.jpg",
+        "image": "/tour/img/snowman-trekking-in-bhutan.avif",
         "highlights": [
             "One of the World's Toughest Treks",
             "Cross High Himalayan Passes above 5000m",
@@ -3344,7 +3344,7 @@ const tourdata = [
         "duration": "10 Days",
         "travelers": "2-12",
         "rating": "5.0",
-        "image": "https://amen-api.flamingoitstudio.net/media/package/banner/gangtey-valley-trek-10-day-adventure.jpg",
+        "image": "/tour/img/gangtey-valley-trek-10-day-adventure.avif",
         "highlights": [
             "Scenic Trek through Phobjikha Valley",
             "Cross Tsele La and Shobju La Passes",
@@ -3460,7 +3460,7 @@ const tourdata = [
         "duration": "7 Days",
         "travelers": "2-12",
         "rating": "5.0",
-        "image": "https://amen-api.flamingoitstudio.net/media/package/banner/chele-la-trek-7-day-itinerary.jpg",
+        "image": "/tour/img/chele-la-trek-7-day-itinerary.avif",
         "highlights": [
             "Hike to Tiger’s Nest Monastery",
             "Cross Chele La and Sagala Passes",
@@ -3540,18 +3540,1082 @@ const tourdata = [
             "Tips for guide and driver",
             "Any services not mentioned in the inclusions"
         ]
+    },
+    {
+        slug: "fly-fishing-bhutan",
+        tour_name: "Divine Fly Fishing Bhutan Experience",
+        title: "Fly Fishing in Bhutan Valleys",
+        category: "adventure",
+        days: 5,
+        duration: "5 Days",
+        travelers: "1-6",
+        rating: "4.9",
+        image: "/tour/img/fly-fishing.avif",
+        highlights: [
+            "Haa Valley Fly Fishing",
+            "Paro River Trout Fishing",
+            "Phobjikha Valley Experience",
+            "Bumthang Brown Trout Fishing"
+        ],
+
+        itinerary: [
+            {
+                day: 1,
+                title: "Arrival in Paro & Transfer to Thimphu",
+                location: "Paro / Thimphu",
+                activities: [
+                    { time: "Arrival", description: "Arrive at Paro International Airport and meet your fly fishing guide." },
+                    { time: "Transfer", description: "Scenic drive to Thimphu with views of river valleys and Himalayan foothills." },
+                    { time: "Briefing", description: "Orientation about fly fishing rules, safety, permits, and gear introduction." },
+                    { time: "Evening", description: "Leisure evening in Thimphu preparing for fishing adventures." },
+                    { time: "Overnight", description: "Overnight stay in Thimphu." }
+                ]
+            },
+            {
+                day: 2,
+                title: "Fly Fishing in Haa Valley",
+                location: "Haa Valley",
+                activities: [
+                    { time: "Morning", description: "Drive via Chele La Pass to Haa Valley with panoramic Himalayan views." },
+                    { time: "Fishing", description: "Fly fishing session targeting Brown Trout, Snow Trout, and Rainbow Trout." },
+                    { time: "Lunch", description: "Light snacks and beverages by riverside." },
+                    { time: "Afternoon", description: "Guided fishing techniques: Dry Fly Fishing and Euro Nymphing." },
+                    { time: "Evening", description: "Relax and enjoy serene valley landscapes." },
+                    { time: "Overnight", description: "Overnight stay in Haa Valley." }
+                ]
+            },
+            {
+                day: 3,
+                title: "Paro Valley Trout Fishing",
+                location: "Paro Valley",
+                activities: [
+                    { time: "Morning", description: "Drive back to Paro and begin guided fishing along Paro river." },
+                    { time: "Fishing", description: "Catch Brown Trout and Snow Trout in pristine alpine streams." },
+                    { time: "Lunch", description: "Picnic lunch with river and mountain views." },
+                    { time: "Afternoon", description: "Advanced casting techniques and river reading session." },
+                    { time: "Evening", description: "Explore Paro town and local handicraft markets." },
+                    { time: "Overnight", description: "Overnight stay in Paro." }
+                ]
+            },
+            {
+                day: 4,
+                title: "Phobjikha Valley Fishing Experience",
+                location: "Phobjikha Valley",
+                activities: [
+                    { time: "Morning", description: "Drive to Phobjikha Valley, winter home of black-necked cranes." },
+                    { time: "Fishing", description: "Fly fishing for Brown Trout in calm marshland streams." },
+                    { time: "Lunch", description: "Light snacks and beverages provided during fishing session." },
+                    { time: "Afternoon", description: "Nature walk and photography in the glacial valley landscape." },
+                    { time: "Evening", description: "Relax at lodge and enjoy Bhutanese hospitality." },
+                    { time: "Overnight", description: "Overnight stay in Phobjikha Valley." }
+                ]
+            },
+            {
+                day: 5,
+                title: "Bumthang Valley & Departure",
+                location: "Bumthang / Paro",
+                activities: [
+                    { time: "Morning", description: "Optional fishing session in Bumthang valley streams for Brown Trout." },
+                    { time: "Transfer", description: "Drive back towards Paro with scenic Himalayan landscapes." },
+                    { time: "Leisure", description: "Free time for packing, souvenir shopping, or relaxation." },
+                    { time: "Departure", description: "Transfer to Paro Airport for final departure." }
+                ]
+            }
+        ],
+
+        includes: [
+            "Fishing permits for all designated valleys",
+            "Professional fly fishing guide",
+            "Fly fishing gear and equipment",
+            "Light snacks and beverages during fishing sessions",
+            "All ground transport in a private vehicle",
+            "Comfortable accommodation during the trip",
+            "Full board meals during the tour",
+            "Government taxes and official expenses"
+        ],
+
+        excludes: [
+            "International airfare to and from Paro",
+            "Travel insurance (medical, cancellation, etc.)",
+            "Personal expenses such as drinks, laundry, internet",
+            "Tips for guide and driver",
+            "Any services not mentioned in the includes section"
+        ]
+    },
+    {
+        "slug": "bhutan-motorcycle-tour-9-days",
+        "tour_name": "Bhutan Motorcycle Tour - 9 Days",
+        "title": "Bhutan Motorcycle Tour - 9 Days",
+        "category": "adventure",
+        "days": 9,
+        "duration": "9 Days",
+        "travelers": "2-10",
+        "rating": "4.9",
+        "image": "/tour/img/biking-in-bhutan.avif",
+        "highlights": [
+            "Ride through Paro, Thimphu, Punakha & Gangtey valleys",
+            "Dochula Pass Himalayan panorama",
+            "Tiger’s Nest Monastery hike",
+            "Punakha Dzong & Suspension Bridge",
+            "Gangtey Nature Trail and Monastery",
+            "Scenic Himalayan mountain road adventure"
+        ],
+        "itinerary": [
+            {
+                "day": 1,
+                "title": "Arrive at Paro",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Arrival", "description": "Arrival at Paro International Airport and warm welcome by tour guide." },
+                    { "time": "Transfer", "description": "Transfer to hotel with scenic views of Paro Valley and traditional architecture." },
+                    { "time": "Check-in", "description": "Hotel check-in and time to relax and acclimatize to altitude." },
+                    { "time": "Leisure", "description": "Gentle walk around Paro town to adapt to the climate and elevation." },
+                    { "time": "Briefing", "description": "Evening tour briefing, itinerary discussion and introduction to fellow riders." },
+                    { "time": "Motorcycle Check", "description": "Introduction to motorcycles and familiarization with riding equipment." }
+                ]
+            },
+            {
+                "day": 2,
+                "title": "Paro Sightseeing",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Breakfast at hotel and preparation for sightseeing." },
+                    { "time": "Hike", "description": "Hike to Tiger’s Nest Monastery with panoramic mountain views." },
+                    { "time": "Lunch", "description": "Lunch at cafeteria near Tiger’s Nest or in Paro town." },
+                    { "time": "Museum Visit", "description": "Visit National Museum housed in Ta Dzong showcasing Bhutanese heritage." },
+                    { "time": "Dzong Visit", "description": "Explore Paro Rinpung Dzong known for intricate murals and architecture." },
+                    { "time": "Evening", "description": "Stroll through Paro market for handicrafts and souvenirs." },
+                    { "time": "Dinner", "description": "Dinner at local restaurant with Bhutanese and international cuisine." }
+                ]
+            },
+            {
+                "day": 3,
+                "title": "Paro to Thimphu Ride (55 km)",
+                "location": "Thimphu",
+                "activities": [
+                    { "time": "Morning", "description": "Breakfast and preparation for first motorcycle ride." },
+                    { "time": "Ride", "description": "Scenic ride from Paro to Thimphu through winding mountain roads." },
+                    { "time": "Check-in", "description": "Hotel check-in and refreshment." },
+                    { "time": "Sightseeing", "description": "Visit National Memorial Chorten and Buddha Dordenma statue." },
+                    { "time": "Dzong Visit", "description": "Explore Tashichho Dzong, seat of Bhutan’s government and monastic body." },
+                    { "time": "Evening", "description": "Leisure exploration of Thimphu’s markets, cafes and handicraft shops." }
+                ]
+            },
+            {
+                "day": 4,
+                "title": "Thimphu to Punakha Ride (70 km)",
+                "location": "Punakha",
+                "activities": [
+                    { "time": "Departure", "description": "Ride towards Punakha via scenic mountain roads." },
+                    { "time": "Pass Visit", "description": "Stop at Dochula Pass for Himalayan views and visit 108 memorial chortens." },
+                    { "time": "Arrival", "description": "Hotel check-in and rest in Punakha." },
+                    { "time": "Dzong Visit", "description": "Explore Punakha Dzong at the confluence of Pho and Mo Chhu rivers." },
+                    { "time": "Bridge Walk", "description": "Walk across Punakha Suspension Bridge with valley views." },
+                    { "time": "Village Walk", "description": "Explore nearby villages and experience local rural life." }
+                ]
+            },
+            {
+                "day": 5,
+                "title": "Punakha to Gangtey Ride (150 km)",
+                "location": "Gangtey",
+                "activities": [
+                    { "time": "Morning", "description": "Breakfast and pre-ride briefing for long scenic ride." },
+                    { "time": "Ride", "description": "Ride through winding mountain roads and diverse Himalayan landscapes." },
+                    { "time": "Pass Stop", "description": "Stop at Pelela Pass for panoramic mountain views." },
+                    { "time": "Arrival", "description": "Arrival in Gangtey Valley and hotel check-in." },
+                    { "time": "Monastery Visit", "description": "Visit Gangtey Goenpa Monastery overlooking Phobjikha Valley." },
+                    { "time": "Nature Walk", "description": "Optional Gangtey Nature Trail walk through serene landscapes." }
+                ]
+            },
+            {
+                "day": 6,
+                "title": "Gangtey to Punakha Ride (73 km)",
+                "location": "Punakha",
+                "activities": [
+                    { "time": "Morning", "description": "Breakfast and optional early morning valley walk." },
+                    { "time": "Ride", "description": "Ride back to Punakha enjoying scenic mountain viewpoints." },
+                    { "time": "Lunch", "description": "Leisure lunch at local restaurant or hotel." },
+                    { "time": "Optional Activity", "description": "River rafting on Mo Chhu or Pho Chhu rivers." },
+                    { "time": "Temple Visit", "description": "Visit Chimi Lhakhang, the famous fertility temple." },
+                    { "time": "Evening", "description": "Relaxation and optional cultural experience in Punakha." }
+                ]
+            },
+            {
+                "day": 7,
+                "title": "Punakha to Thimphu Ride (70 km)",
+                "location": "Thimphu",
+                "activities": [
+                    { "time": "Morning", "description": "Breakfast and motorcycle checks before departure." },
+                    { "time": "Ride", "description": "Ride back to Thimphu via scenic valleys and mountain roads." },
+                    { "time": "Pass Stop", "description": "Stop again at Dochula Pass for panoramic Himalayan views." },
+                    { "time": "Arrival", "description": "Hotel check-in and relaxation in Thimphu." },
+                    { "time": "Afternoon", "description": "Visit Royal Textile Academy or Folk Heritage Museum." },
+                    { "time": "Evening", "description": "Dinner and optional cultural show or live traditional performance." }
+                ]
+            },
+            {
+                "day": 8,
+                "title": "Thimphu to Paro Ride (55 km)",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Breakfast and last-minute shopping in Thimphu." },
+                    { "time": "Ride", "description": "Scenic ride back to Paro with photo stops along the route." },
+                    { "time": "Arrival", "description": "Hotel check-in and relaxation in Paro." },
+                    { "time": "Village Visit", "description": "Optional visit to a traditional farmhouse for cultural experience." },
+                    { "time": "Farewell Dinner", "description": "Special farewell dinner celebrating the motorcycle journey." },
+                    { "time": "Cultural Show", "description": "Optional cultural performance to conclude the tour." }
+                ]
+            },
+            {
+                "day": 9,
+                "title": "Depart Paro",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Breakfast and final packing at hotel." },
+                    { "time": "Check-out", "description": "Hotel check-out and preparation for departure." },
+                    { "time": "Transfer", "description": "Transfer to Paro International Airport." },
+                    { "time": "Departure", "description": "Flight check-in, boarding and farewell to Bhutan." }
+                ]
+            }
+        ],
+        "includes": [
+            "Motorcycle rental with maintenance for high-altitude roads",
+            "Self-drive or guided motorcycle tour options",
+            "Comprehensive Bhutan motorcycle travel guide and route maps",
+            "Group biking tours with experienced support crew",
+            "Safety gear including helmets and protective equipment",
+            "Accommodation and meals throughout the tour",
+            "Support vehicle for luggage transport and emergency backup",
+            "Expert local tour guides ensuring safety and cultural insights",
+            "All local permits and entrance fees as per itinerary"
+        ],
+        "excludes": [
+            "International airfare to and from Bhutan",
+            "Comprehensive travel insurance",
+            "Personal expenses such as beverages, laundry and souvenirs",
+            "Tips and gratuities for guides and support staff",
+            "Optional activities not included in the itinerary",
+            "Emergency evacuation or medical costs"
+        ]
+    },
+    {
+        "slug": "kayaking-and-rafting-bhutan",
+        "tour_name": "Kayaking and Rafting - 7 Days",
+        "title": "Kayaking and Rafting Adventure in Bhutan",
+        "category": "adventure",
+        "days": 7,
+        "duration": "7 Days",
+        "travelers": "2-12",
+        "rating": "4.8",
+        "image": "/tour/img/rafting-in-bhutan.avif",
+        "highlights": [
+            "Rafting on Mo Chhu River in Punakha",
+            "Dochula Pass Himalayan views",
+            "Tiger’s Nest Monastery hike",
+            "Punakha Dzong & Suspension Bridge",
+            "Paro and Thimphu cultural sightseeing",
+            "Village visits and cultural immersion"
+        ],
+        "itinerary": [
+            {
+                "day": 1,
+                "title": "Arrival in Paro",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Arrival", "description": "Arrival at Paro International Airport and assistance with immigration and customs." },
+                    { "time": "Transfer", "description": "Private transfer to hotel for check-in and refreshment." },
+                    { "time": "Lunch", "description": "Welcome lunch at a local restaurant featuring Bhutanese cuisine." },
+                    { "time": "Sightseeing", "description": "Visit Paro Rinpung Dzong, a historic fortress-monastery with intricate woodwork." },
+                    { "time": "Museum Visit", "description": "Explore the National Museum housed in Ta Dzong showcasing Bhutanese artifacts." },
+                    { "time": "Evening", "description": "Stroll through Paro town visiting local shops and handicraft stores." },
+                    { "time": "Dinner", "description": "Welcome dinner at hotel or local restaurant with traditional Bhutanese dishes." }
+                ]
+            },
+            {
+                "day": 2,
+                "title": "Paro to Thimphu",
+                "location": "Thimphu",
+                "activities": [
+                    { "time": "Morning", "description": "Breakfast at hotel followed by scenic drive to Thimphu." },
+                    { "time": "Stop", "description": "Visit Tachog Lhakhang temple and cross the traditional iron chain bridge." },
+                    { "time": "Lunch", "description": "Lunch at a local restaurant in Thimphu." },
+                    { "time": "Sightseeing", "description": "Visit Buddha Dordenma Statue overlooking Thimphu valley." },
+                    { "time": "Dzong Visit", "description": "Explore Tashichho Dzong, the seat of Bhutan’s government and monastic body." },
+                    { "time": "Evening", "description": "Stroll around Thimphu market or Centenary Farmers’ Market (weekends)." },
+                    { "time": "Dinner", "description": "Dinner at local restaurant followed by hotel check-in and rest." }
+                ]
+            },
+            {
+                "day": 3,
+                "title": "Thimphu to Punakha",
+                "location": "Punakha",
+                "activities": [
+                    { "time": "Morning", "description": "Breakfast and departure for Punakha via Dochula Pass." },
+                    { "time": "Pass Visit", "description": "Stop at Dochula Pass to admire 108 chortens and Himalayan panoramic views." },
+                    { "time": "Drive", "description": "Continue scenic descent through lush valleys and traditional villages." },
+                    { "time": "Lunch", "description": "Lunch at local restaurant in Punakha." },
+                    { "time": "Dzong Visit", "description": "Explore Punakha Dzong at the confluence of Pho Chhu and Mo Chhu rivers." },
+                    { "time": "Bridge Walk", "description": "Walk across the Punakha Suspension Bridge with river valley views." },
+                    { "time": "Evening", "description": "Hotel check-in, dinner and optional cultural performance or hot stone bath." }
+                ]
+            },
+            {
+                "day": 4,
+                "title": "Rafting in Punakha",
+                "location": "Punakha",
+                "activities": [
+                    { "time": "Morning", "description": "Breakfast followed by rafting safety briefing and gear distribution." },
+                    { "time": "Rafting", "description": "Start rafting on Mo Chhu River with Class II–III rapids suitable for beginners." },
+                    { "time": "Scenic Views", "description": "Enjoy views of Punakha Dzong, lush valleys and traditional farmhouses from the river." },
+                    { "time": "Lunch", "description": "Picnic lunch by the riverside at a scenic location." },
+                    { "time": "Afternoon Rafting", "description": "Continue rafting through exciting rapids and spot local wildlife along riverbanks." },
+                    { "time": "Village Visit", "description": "Optional visit to a nearby village to interact with locals and learn their lifestyle." },
+                    { "time": "Evening", "description": "Return to hotel, dinner and leisure time for relaxation or stargazing." }
+                ]
+            },
+            {
+                "day": 5,
+                "title": "Punakha to Paro",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Breakfast and departure for Paro via Dochula Pass." },
+                    { "time": "Coffee Break", "description": "Stop at Dochula Pass for tea or coffee with Himalayan views." },
+                    { "time": "Lunch", "description": "Lunch at a local restaurant en route." },
+                    { "time": "Dzong Visit", "description": "Visit Simtokha Dzong, Bhutan’s oldest fortress now housing a Buddhist studies institute." },
+                    { "time": "Arrival", "description": "Arrive in Paro and hotel check-in." },
+                    { "time": "Leisure", "description": "Explore Paro town or visit Kyichu Lhakhang temple." },
+                    { "time": "Dinner", "description": "Dinner at local restaurant featuring dishes like Ema Datshi and Red Rice." }
+                ]
+            },
+            {
+                "day": 6,
+                "title": "Hike to Tiger’s Nest Monastery",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Early breakfast and drive to Tiger’s Nest trailhead." },
+                    { "time": "Hike", "description": "Begin 4–5 hour round-trip hike through pine forests and prayer flag-lined paths." },
+                    { "time": "Monastery Visit", "description": "Explore Taktsang Monastery perched 900 meters above the valley floor." },
+                    { "time": "Lunch", "description": "Lunch at midway cafeteria or packed lunch with monastery views." },
+                    { "time": "Descent", "description": "Hike down to base and return to Paro hotel." },
+                    { "time": "Evening", "description": "Leisure time followed by celebratory dinner reflecting on the journey." }
+                ]
+            },
+            {
+                "day": 7,
+                "title": "Departure from Paro",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Final breakfast in Bhutan and packing for departure." },
+                    { "time": "Check-Out", "description": "Hotel check-out and last-minute stroll around Paro if time permits." },
+                    { "time": "Transfer", "description": "Transfer to Paro International Airport." },
+                    { "time": "Departure", "description": "Flight check-in, immigration clearance and departure from Bhutan." }
+                ]
+            }
+        ],
+        "includes": [
+            "All ground transport in a private vehicle including airport transfers",
+            "Standard accommodation in Paro, Thimphu and Punakha on twin sharing basis",
+            "All entrance fees to museums and monuments",
+            "Bhutanese Tourist Visa fee",
+            "Full board meals: breakfast, lunch, dinner, tea and snacks",
+            "Professional English-speaking Bhutanese tour guide",
+            "Rafting equipment including helmets, paddles and life jackets",
+            "All government taxes and official expenses",
+            "Mineral drinking water during the tour"
+        ],
+        "excludes": [
+            "International airfare to and from Bhutan",
+            "Comprehensive travel insurance",
+            "Personal expenses such as calls, internet, laundry, beverages and alcohol",
+            "Special filming, camera and drone permit fees",
+            "Tips for guide and driver",
+            "Optional activities not mentioned in the itinerary",
+            "Any other personal expenses not listed in the cost includes section"
+        ]
+    },
+    {
+        "slug": "bhutan-photography-tour-13-days",
+        "tour_name": "Bhutan Photography Tour - 13 Days",
+        "title": "13 Days Bhutan Photography Tour",
+        "category": "cultural",
+        "days": 13,
+        "duration": "13 Days",
+        "travelers": "2-10",
+        "rating": "4.9",
+        "image": "/tour/img/bhutan-photography.jpg",
+        "highlights": [
+            "Tiger’s Nest Monastery photography hike",
+            "Dochula Pass Himalayan panoramas",
+            "Bumthang cultural and landscape photography",
+            "Trashiyangtse Dzong and Chorten Kora",
+            "Thimphu and Paro street photography",
+            "Eastern Bhutan village and artisan portraits"
+        ],
+        "itinerary": [
+            {
+                "day": 1,
+                "title": "Arrival Paro – Drive to Thimphu",
+                "location": "Thimphu",
+                "activities": [
+                    { "time": "Arrival", "description": "Arrival at Paro International Airport and warm Bhutanese welcome by guide." },
+                    { "time": "Drive", "description": "Scenic 1-hour drive to Thimphu with views of valleys and traditional architecture." },
+                    { "time": "Check-in", "description": "Hotel check-in, relaxation and acclimatization at 2,250m altitude." },
+                    { "time": "Photography Walk", "description": "Leisure walk around Thimphu capturing local life and urban Bhutanese scenes." },
+                    { "time": "Dinner", "description": "Welcome dinner featuring traditional Bhutanese cuisine and tour briefing." }
+                ]
+            },
+            {
+                "day": 2,
+                "title": "Thimphu – Trongsa",
+                "location": "Trongsa",
+                "activities": [
+                    { "time": "Morning", "description": "Early breakfast and departure for scenic drive to Trongsa (5–6 hrs)." },
+                    { "time": "Photo Stops", "description": "Stops at Dochula Pass for panoramic Himalayan landscape photography." },
+                    { "time": "Sightseeing", "description": "Visit Chendebji Chorten, a stupa modeled after Swayambhunath." },
+                    { "time": "Arrival", "description": "Arrive in Trongsa, hotel check-in and explore the impressive Trongsa Dzong." },
+                    { "time": "Evening", "description": "Dinner and photo review session with tips from tour leader." }
+                ]
+            },
+            {
+                "day": 3,
+                "title": "Trongsa – Mongar",
+                "location": "Mongar",
+                "activities": [
+                    { "time": "Morning", "description": "Breakfast and early departure for scenic drive to Mongar (6–7 hrs)." },
+                    { "time": "Drive", "description": "Photography stops along forested mountain roads and dramatic vistas." },
+                    { "time": "Pass Crossing", "description": "Cross Thrumshing La Pass (3,780m) for misty high-altitude photography." },
+                    { "time": "Lunch", "description": "Lunch at local restaurant capturing rural lifestyle scenes." },
+                    { "time": "Evening", "description": "Arrive in Mongar, evening walk and authentic street photography." }
+                ]
+            },
+            {
+                "day": 4,
+                "title": "Mongar – Galing",
+                "location": "Galing",
+                "activities": [
+                    { "time": "Morning", "description": "Breakfast and scenic drive through farmlands and traditional villages." },
+                    { "time": "Village Visit", "description": "Interact with locals in Galing village for cultural portrait photography." },
+                    { "time": "Lunch", "description": "Traditional lunch with a local family and cultural immersion experience." },
+                    { "time": "Exploration", "description": "Explore village architecture, fields and landscapes for photography." },
+                    { "time": "Sunset", "description": "Sunset landscape photography over rolling hills and countryside." }
+                ]
+            },
+            {
+                "day": 5,
+                "title": "Trashiyangtse Excursions",
+                "location": "Trashiyangtse",
+                "activities": [
+                    { "time": "Morning", "description": "Drive to Trashiyangtse with scenic photography stops en route." },
+                    { "time": "Dzong Visit", "description": "Visit Trashiyangtse Dzong capturing architecture and monastic life." },
+                    { "time": "Chorten Visit", "description": "Photograph Chorten Kora stupa and devotional activities of locals." },
+                    { "time": "Artisan Workshops", "description": "Visit traditional craft workshops photographing artisans at work." },
+                    { "time": "Nature Walk", "description": "Optional nature walk for bird and wildlife photography." }
+                ]
+            },
+            {
+                "day": 6,
+                "title": "Trashigang – Bumthang",
+                "location": "Bumthang",
+                "activities": [
+                    { "time": "Morning", "description": "Early breakfast and scenic drive to Bumthang (6–7 hrs)." },
+                    { "time": "Photo Stops", "description": "Stops at high passes including Thrumshing La for panoramic shots." },
+                    { "time": "Lunch", "description": "Lunch en route with candid rural photography opportunities." },
+                    { "time": "Arrival", "description": "Arrive in Bumthang, check-in and gentle evening exploration." },
+                    { "time": "Dinner", "description": "Dinner featuring Bumthang specialties like buckwheat pancakes." }
+                ]
+            },
+            {
+                "day": 7,
+                "title": "Bumthang Sightseeing",
+                "location": "Bumthang",
+                "activities": [
+                    { "time": "Morning", "description": "Visit Jakar Dzong overlooking Chokhor Valley for architectural shots." },
+                    { "time": "Monastery Visit", "description": "Explore Kurje Lhakhang and Tamshing Lhakhang sacred temples." },
+                    { "time": "Lunch", "description": "Lunch at local restaurant sampling regional dishes." },
+                    { "time": "Valley Exploration", "description": "Visit Red Panda Brewery and Cheese Factory for lifestyle photography." },
+                    { "time": "Evening", "description": "Visit Burning Lake (Mebar Tsho) for serene landscape photography." }
+                ]
+            },
+            {
+                "day": 8,
+                "title": "Bumthang – Punakha",
+                "location": "Punakha",
+                "activities": [
+                    { "time": "Morning", "description": "Early breakfast and scenic drive to Punakha (6–7 hrs)." },
+                    { "time": "Pass Crossing", "description": "Cross Pele La Pass with panoramic mountain photography opportunities." },
+                    { "time": "Photo Stops", "description": "Multiple stops capturing rural life, valleys and alpine landscapes." },
+                    { "time": "Temple Visit", "description": "Visit Chimi Lhakhang fertility temple via scenic village walk." },
+                    { "time": "Evening", "description": "Arrive Punakha, sunset photography near rivers and dzong area." }
+                ]
+            },
+            {
+                "day": 9,
+                "title": "Punakha – Thimphu",
+                "location": "Thimphu",
+                "activities": [
+                    { "time": "Morning", "description": "Visit Punakha Dzong at the confluence of Pho Chhu and Mo Chhu rivers." },
+                    { "time": "Bridge Walk", "description": "Walk across Punakha Suspension Bridge for dynamic photography angles." },
+                    { "time": "Drive", "description": "Scenic drive back to Thimphu with photo stops en route." },
+                    { "time": "Pass Stop", "description": "Stop at Dochula Pass for panoramic Himalayan views and chorten photography." },
+                    { "time": "Evening", "description": "Evening street photography walk around Thimphu market area." }
+                ]
+            },
+            {
+                "day": 10,
+                "title": "Thimphu Sightseeing",
+                "location": "Thimphu",
+                "activities": [
+                    { "time": "Morning", "description": "Visit National Memorial Chorten capturing daily religious activities." },
+                    { "time": "Viewpoint", "description": "Photograph Buddha Dordenma statue overlooking Thimphu valley." },
+                    { "time": "Museum Visit", "description": "Explore Folk Heritage Museum showcasing Bhutanese lifestyle." },
+                    { "time": "Textile Museum", "description": "Capture traditional Bhutanese weaving and textile displays." },
+                    { "time": "Evening", "description": "Visit Tashichho Dzong and optional night photography session." }
+                ]
+            },
+            {
+                "day": 11,
+                "title": "Thimphu – Paro Sightseeing",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Drive to Paro with stop at historic Simtokha Dzong." },
+                    { "time": "Dzong Visit", "description": "Explore Rinpung Dzong capturing Bhutanese fortress architecture." },
+                    { "time": "Museum Visit", "description": "Visit Ta Dzong National Museum for cultural photography." },
+                    { "time": "Temple Visit", "description": "Visit Kyichu Lhakhang, one of Bhutan’s oldest temples." },
+                    { "time": "Evening", "description": "Street photography in Paro town followed by dinner and preparation for hike." }
+                ]
+            },
+            {
+                "day": 12,
+                "title": "Excursion to Tiger’s Nest Monastery",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Early breakfast and drive to Tiger’s Nest trailhead." },
+                    { "time": "Hike", "description": "6–7 hour round-trip hike through pine forests with multiple photo viewpoints." },
+                    { "time": "Monastery Visit", "description": "Explore Taktsang Monastery exteriors and capture dramatic cliffside shots." },
+                    { "time": "Lunch", "description": "Lunch at cafeteria midway down with panoramic monastery views." },
+                    { "time": "Evening", "description": "Return to hotel, dinner and photo review session." }
+                ]
+            },
+            {
+                "day": 13,
+                "title": "Departure",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Final breakfast and packing of belongings and photography gear." },
+                    { "time": "Check-out", "description": "Hotel check-out and transfer to Paro International Airport." },
+                    { "time": "Departure", "description": "Flight departure with reflections on Bhutan photography journey." }
+                ]
+            }
+        ],
+        "includes": [
+            "Comfortable accommodations throughout the tour",
+            "All meals during the trip including local delicacies",
+            "All internal transport and airport transfers",
+            "Experienced English-speaking photography guide",
+            "All necessary permits and entry fees",
+            "Support staff including porters and cooks where required",
+            "Basic trekking and travel equipment (sleeping bags, tents, mats)"
+        ],
+        "excludes": [
+            "International airfare to and from Bhutan",
+            "Comprehensive travel insurance covering high altitude travel",
+            "Personal expenses such as laundry, calls, bar bills and Wi-Fi",
+            "Additional meals, drinks and alcoholic beverages",
+            "Tips and gratuities for guides and staff",
+            "Emergency evacuation or itinerary changes due to personal reasons",
+            "Visa fees and specialized personal photography equipment rental",
+            "Souvenirs and handicraft purchases"
+        ]
+    },
+    {
+        "slug": "bhutan-birding-tour-8-days",
+        "tour_name": "Bhutan Birding Tour - 8 Days",
+        "title": "8 Days Bhutan Birding Tour",
+        "category": "nature",
+        "days": 8,
+        "duration": "8 Days",
+        "travelers": "2-10",
+        "rating": "4.8",
+        "image": "/tour/img/bird-watching-in-bhutan.avif",
+        "highlights": [
+            "Birding in Thimphu forests and botanical gardens",
+            "High-altitude birdwatching at Dochula Pass",
+            "River birding along Mo Chhu in Punakha",
+            "Black-necked Crane habitat in Phobjikha Valley",
+            "Paro Valley alpine and riverine bird species",
+            "Hike to Tiger’s Nest with forest bird sightings"
+        ],
+        "itinerary": [
+            {
+                "day": 1,
+                "title": "Arrival in Paro & Drive to Thimphu",
+                "location": "Thimphu",
+                "activities": [
+                    { "time": "Arrival", "description": "Arrival at Paro International Airport, meet guide and complete immigration formalities." },
+                    { "time": "Drive", "description": "Scenic 1.5-hour drive to Thimphu with views of rivers, terraced fields and villages." },
+                    { "time": "Stop", "description": "Visit Tachogang Lhakhang (Iron Bridge Temple) with initial birdwatching opportunities." },
+                    { "time": "Check-in", "description": "Hotel check-in in Thimphu and rest after the journey." },
+                    { "time": "Evening", "description": "Optional exploration of Thimphu streets and Craft Bazaar." }
+                ]
+            },
+            {
+                "day": 2,
+                "title": "Bird Habitat Exploration in Thimphu",
+                "location": "Thimphu",
+                "activities": [
+                    { "time": "Morning", "description": "Early birding excursion in Botanical Garden and riverside forests spotting nutcrackers, choughs and warblers." },
+                    { "time": "Sightseeing", "description": "Visit National Memorial Chorten and Tashichho Dzong for cultural exploration." },
+                    { "time": "Lunch", "description": "Traditional Bhutanese lunch at a local restaurant." },
+                    { "time": "Afternoon", "description": "Birdwatching at Kuenselphodrang Nature Park near Buddha Dordenma statue." },
+                    { "time": "Evening", "description": "Leisure walk or additional birding in Royal Botanical Garden." }
+                ]
+            },
+            {
+                "day": 3,
+                "title": "Thimphu to Punakha Valley",
+                "location": "Punakha",
+                "activities": [
+                    { "time": "Morning", "description": "Drive to Punakha crossing Dochula Pass (3,100m) with Himalayan Monal and Blood Pheasant sightings." },
+                    { "time": "Pass Stop", "description": "Birdwatching at Dochula Pass around 108 chortens and alpine forests." },
+                    { "time": "Arrival", "description": "Descend into subtropical Punakha Valley and visit Punakha Dzong." },
+                    { "time": "Lunch", "description": "Lunch at local restaurant featuring valley produce." },
+                    { "time": "Afternoon", "description": "Birdwatching along Mo Chhu River spotting herons, kingfishers and raptors." }
+                ]
+            },
+            {
+                "day": 4,
+                "title": "Punakha Birding and Cultural Exploration",
+                "location": "Punakha",
+                "activities": [
+                    { "time": "Morning", "description": "Early birding along Mo Chhu River searching for White-bellied Heron and Pallas’s Fish Eagle." },
+                    { "time": "Temple Visit", "description": "Walk through rice fields to Chimi Lhakhang for birding and cultural immersion." },
+                    { "time": "Lunch", "description": "Traditional Bhutanese lunch in Punakha Valley." },
+                    { "time": "Afternoon", "description": "Explore Punakha Dzong and surrounding gardens with birdwatching opportunities." },
+                    { "time": "Evening", "description": "Evening birding in Punakha Valley spotting kestrels, hoopoes and sparrowhawks." }
+                ]
+            },
+            {
+                "day": 5,
+                "title": "Drive from Punakha to Phobjikha Valley",
+                "location": "Phobjikha",
+                "activities": [
+                    { "time": "Morning", "description": "Drive to Phobjikha Valley through changing forest habitats with birding stops en route." },
+                    { "time": "Arrival", "description": "Arrive in glacial Phobjikha Valley known for Black-necked Cranes (winter months)." },
+                    { "time": "Lunch", "description": "Local lunch featuring buckwheat and dairy-based valley cuisine." },
+                    { "time": "Exploration", "description": "Walk through meadows and wetlands observing cranes, griffons and magpies." },
+                    { "time": "Monastery Visit", "description": "Visit Gangtey Monastery overlooking valley with excellent birdwatching spots." }
+                ]
+            },
+            {
+                "day": 6,
+                "title": "Phobjikha to Paro Valley",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Early birdwatching in Phobjikha Valley spotting cranes, thrushes and finches." },
+                    { "time": "Drive", "description": "Scenic 5–6 hour drive back to Paro with birding stops in forested areas." },
+                    { "time": "Lunch", "description": "Lunch at local restaurant en route." },
+                    { "time": "Arrival", "description": "Check-in at hotel in Paro and rest after long drive." },
+                    { "time": "Evening", "description": "Evening birdwatching around Paro Valley spotting redstarts and riverine species." }
+                ]
+            },
+            {
+                "day": 7,
+                "title": "Hike to Tiger’s Nest Monastery",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Early breakfast and start hike to Tiger’s Nest Monastery through pine forests." },
+                    { "time": "Birding", "description": "Observe forest birds such as Blue Whistling Thrush and laughingthrushes along the trail." },
+                    { "time": "Monastery Visit", "description": "Explore Taktsang Monastery perched at 3,120m with panoramic valley views." },
+                    { "time": "Lunch", "description": "Lunch at local restaurant in Paro after descent." },
+                    { "time": "Afternoon", "description": "Visit Kyichu Lhakhang or explore Paro town and markets." }
+                ]
+            },
+            {
+                "day": 8,
+                "title": "Departure from Paro",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Optional final birdwatching session around Paro Valley and river habitats." },
+                    { "time": "Breakfast", "description": "Breakfast at hotel and check-out procedures." },
+                    { "time": "Transfer", "description": "Transfer to Paro International Airport with assistance from guide." },
+                    { "time": "Departure", "description": "Flight departure marking the end of Bhutan Birding Tour." }
+                ]
+            }
+        ],
+        "includes": [
+            "Bhutan royalties, tourist fees, visa fees and government taxes",
+            "Accommodation in listed or similar 3-star hotels",
+            "All meals including tea and coffee throughout the trip",
+            "All land transfers and sightseeing with entrance fees",
+            "Bottled drinking water in vehicle and basic camp services"
+        ],
+        "excludes": [
+            "Travel insurance",
+            "Personal expenses of any nature",
+            "Alcoholic and soft drinks such as beer, whisky, coke and fanta",
+            "Telephone and internet charges",
+            "Tips for guide and driver"
+        ]
+    },
+    {
+        "slug": "bhutan-buddhist-pilgrimage-tour-8-days",
+        "tour_name": "Bhutan Buddhist Pilgrimage Tour - 8 Days",
+        "title": "8 Days Bhutan Buddhist Pilgrimage Tour",
+        "category": "spiritual",
+        "days": 8,
+        "duration": "8 Days",
+        "travelers": "2-10",
+        "rating": "4.8",
+        "image": "/tour/img/pilgrimage-tour.avif",
+        "highlights": [
+            "Visit sacred Buddhist sites across western Bhutan",
+            "Pilgrimage to Tiger’s Nest Monastery in Paro",
+            "Explore Gangtey Monastery in Phobjikha Valley",
+            "Punakha Dzong and Khamsum Yulley Namgyal Chorten hike",
+            "Dochula Pass with 108 chortens and Himalayan views",
+            "Cultural and spiritual immersion in Thimphu and Paro"
+        ],
+        "itinerary": [
+            {
+                "day": 1,
+                "title": "Arrival in Paro & Transfer to Thimphu",
+                "location": "Thimphu",
+                "activities": [
+                    { "time": "Arrival", "description": "Arrive at Paro International Airport and receive a warm welcome from the tour representative." },
+                    { "time": "Transfer", "description": "Scenic 55 km drive to Thimphu along Paro Chu river and lush valleys." },
+                    { "time": "Check-in", "description": "Hotel check-in in Thimphu followed by rest and acclimatization." },
+                    { "time": "Orientation", "description": "Brief orientation about the pilgrimage journey, cultural etiquette, and travel tips." }
+                ]
+            },
+            {
+                "day": 2,
+                "title": "Spiritual and Cultural Exploration in Thimphu",
+                "location": "Thimphu",
+                "activities": [
+                    { "time": "Morning", "description": "Guided city tour including National Memorial Chorten and Buddha Dordenma Statue." },
+                    { "time": "Museums", "description": "Visit Folk Heritage Museum and National Textile Museum to learn Bhutanese traditions." },
+                    { "time": "Dzong Visit", "description": "Explore Tashichho Dzong, seat of government and central monastic body." },
+                    { "time": "Market", "description": "Walk through Handicrafts Market to observe traditional crafts and textiles." },
+                    { "time": "Evening", "description": "Free time to explore Thimphu or relax followed by dinner at the hotel." }
+                ]
+            },
+            {
+                "day": 3,
+                "title": "Thimphu to Gangtey via Dochula Pass",
+                "location": "Gangtey",
+                "activities": [
+                    { "time": "Morning", "description": "Early breakfast and drive 150 km to Gangtey through scenic Himalayan landscapes." },
+                    { "time": "Dochula Pass", "description": "Stop at Dochula Pass (3,100m) with panoramic Himalayan views and 108 chortens." },
+                    { "time": "Lunch", "description": "Lunch at a local restaurant en route to Phobjikha Valley." },
+                    { "time": "Arrival", "description": "Arrive in Gangtey and check into hotel in the serene Phobjikha Valley." },
+                    { "time": "Monastery Visit", "description": "Visit Gangtey Monastery, an important Nyingmapa Buddhist center." }
+                ]
+            },
+            {
+                "day": 4,
+                "title": "Gangtey to Punakha",
+                "location": "Punakha",
+                "activities": [
+                    { "time": "Morning", "description": "Explore Phobjikha Valley with nature walk and views of black-necked crane habitat." },
+                    { "time": "Drive", "description": "Drive 75 km to Punakha with scenic viewpoints along the route." },
+                    { "time": "Lunch", "description": "Lunch upon arrival in Punakha featuring regional cuisine." },
+                    { "time": "Dzong Visit", "description": "Visit Punakha Dzong at the confluence of Pho Chhu and Mo Chhu rivers." },
+                    { "time": "Suspension Bridge", "description": "Optional walk across the suspension bridge offering picturesque valley views." }
+                ]
+            },
+            {
+                "day": 5,
+                "title": "Spiritual Sites and Exploration in Punakha",
+                "location": "Punakha",
+                "activities": [
+                    { "time": "Morning", "description": "Hike to Khamsum Yulley Namgyal Chorten overlooking Punakha Valley." },
+                    { "time": "Insight", "description": "Explore the chorten’s intricate religious paintings symbolizing peace and harmony." },
+                    { "time": "Village Tour", "description": "Visit local villages to experience Bhutanese rural life and traditional farming." },
+                    { "time": "Leisure", "description": "Relax at the hotel or walk along the banks of Mo Chhu River in the evening." },
+                    { "time": "Dinner", "description": "Dinner at hotel reflecting on spiritual experiences of the day." }
+                ]
+            },
+            {
+                "day": 6,
+                "title": "Punakha to Paro via Dochula Pass",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Drive 120 km back to Paro enjoying mountain passes and lush valleys." },
+                    { "time": "Stop", "description": "Optional stop again at Dochula Pass for Himalayan views and refreshments." },
+                    { "time": "Lunch", "description": "Lunch at a local restaurant along the route." },
+                    { "time": "Arrival", "description": "Check into hotel in Paro and relax after the scenic journey." },
+                    { "time": "Exploration", "description": "Explore Paro town or visit a traditional farmhouse for cultural insight." }
+                ]
+            },
+            {
+                "day": 7,
+                "title": "Paro Spiritual Sightseeing & Tiger’s Nest Pilgrimage",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Visit Rinpung Dzong, an important religious and administrative center." },
+                    { "time": "Museum", "description": "Explore the National Museum of Bhutan showcasing religious art and artifacts." },
+                    { "time": "Hike", "description": "Pilgrimage hike to Taktsang (Tiger’s Nest Monastery) perched at 3,120m." },
+                    { "time": "Cafeteria Stop", "description": "Tea break at midway cafeteria with panoramic monastery views." },
+                    { "time": "Evening", "description": "Return to hotel, relax and reflect on the spiritual significance of the pilgrimage." }
+                ]
+            },
+            {
+                "day": 8,
+                "title": "Departure from Paro",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Breakfast at hotel followed by packing and check-out procedures." },
+                    { "time": "Transfer", "description": "Transfer to Paro International Airport arranged by tour operator." },
+                    { "time": "Departure", "description": "Flight departure with reflections on the spiritual journey through Bhutan." }
+                ]
+            }
+        ],
+        "includes": [
+            "Accommodation on twin sharing or single room basis",
+            "Breakfast and dinner at hotels and lunch at local restaurants",
+            "All transfers and sightseeing as per itinerary",
+            "English-speaking accompanying guide",
+            "Government royalty, taxes and entrance fees",
+            "Two bottles of water per person per day in vehicle"
+        ],
+        "excludes": [
+            "Travel insurance",
+            "Personal expenses such as drinks, postage and laundry",
+            "Telephone and internet charges",
+            "Emergency evacuation costs",
+            "Tips and gratuities",
+            "Costs due to unforeseen events",
+            "Extra optional activities like cultural shows or kayaking"
+        ]
+    },
+    {
+        "slug": "bhutan-luxury-escape-7-days",
+        "tour_name": "Bhutan Luxury Escape - 7 Days",
+        "title": "7 Days Luxury Bhutan Cultural Escape",
+        "category": "luxury",
+        "days": 7,
+        "duration": "7 Days",
+        "travelers": "2-6",
+        "rating": "4.9",
+        "image": "/tour/img/luxury-bhutan-escape.avif",
+        "highlights": [
+            "Luxury stays in 5-star resorts across Paro, Thimphu and Punakha",
+            "Private guided cultural and spiritual tours",
+            "Dochula Pass panoramic Himalayan views",
+            "Exclusive hike to Tiger’s Nest Monastery",
+            "Fine dining with authentic Bhutanese and international cuisine"
+        ],
+        "itinerary": [
+            {
+                "day": 1,
+                "title": "Arrival in Paro & Transfer to Thimphu",
+                "location": "Thimphu",
+                "activities": [
+                    { "time": "Arrival", "description": "Arrive at Paro International Airport and receive VIP welcome assistance." },
+                    { "time": "Transfer", "description": "Private luxury vehicle transfer to Thimphu with scenic Himalayan views." },
+                    { "time": "Check-in", "description": "Check-in at a luxury 5-star hotel and relax." },
+                    { "time": "Evening", "description": "Welcome dinner at a fine dining restaurant with Bhutanese delicacies." }
+                ]
+            },
+            {
+                "day": 2,
+                "title": "Thimphu Luxury Cultural Exploration",
+                "location": "Thimphu",
+                "activities": [
+                    { "time": "Morning", "description": "Visit Buddha Dordenma and National Memorial Chorten with private guide." },
+                    { "time": "Afternoon", "description": "Explore Folk Heritage Museum and Textile Museum." },
+                    { "time": "Evening", "description": "Private shopping experience at local craft boutiques." }
+                ]
+            },
+            {
+                "day": 3,
+                "title": "Thimphu to Punakha via Dochula Pass",
+                "location": "Punakha",
+                "activities": [
+                    { "time": "Drive", "description": "Scenic drive to Punakha via Dochula Pass with luxury picnic stop." },
+                    { "time": "Sightseeing", "description": "Visit Punakha Dzong and suspension bridge." },
+                    { "time": "Evening", "description": "Relax at luxury riverside resort with spa experience." }
+                ]
+            },
+            {
+                "day": 4,
+                "title": "Punakha Valley Experience",
+                "location": "Punakha",
+                "activities": [
+                    { "time": "Morning", "description": "Hike to Khamsum Yulley Namgyal Chorten with private guide." },
+                    { "time": "Afternoon", "description": "Leisure time with optional river rafting or wellness spa." },
+                    { "time": "Evening", "description": "Private candlelight dinner overlooking the valley." }
+                ]
+            },
+            {
+                "day": 5,
+                "title": "Punakha to Paro",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Drive", "description": "Luxury drive back to Paro with scenic photo stops." },
+                    { "time": "Sightseeing", "description": "Visit Paro Dzong and National Museum." },
+                    { "time": "Evening", "description": "Relax at luxury resort with cultural performance." }
+                ]
+            },
+            {
+                "day": 6,
+                "title": "Tiger’s Nest Monastery Excursion",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Exclusive guided hike to Tiger’s Nest Monastery." },
+                    { "time": "Lunch", "description": "Gourmet lunch at scenic viewpoint cafeteria." },
+                    { "time": "Evening", "description": "Spa and wellness therapy at luxury resort." }
+                ]
+            },
+            {
+                "day": 7,
+                "title": "Departure from Paro",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Leisure breakfast and private airport transfer." },
+                    { "time": "Departure", "description": "Flight departure with VIP assistance." }
+                ]
+            }
+        ],
+        "includes": [
+            "Luxury 5-star hotel accommodations",
+            "Private luxury vehicle and chauffeur",
+            "All meals including fine dining experiences",
+            "Professional English-speaking guide",
+            "Entrance fees and permits",
+            "Spa and wellness session"
+        ],
+        "excludes": [
+            "International airfare",
+            "Travel insurance",
+            "Personal expenses and beverages",
+            "Tips and gratuities"
+        ]
+    },
+    {
+        "slug": "bhutan-ultra-luxury-himalayan-retreat-10-days",
+        "tour_name": "Bhutan Ultra Luxury Himalayan Retreat - 10 Days",
+        "title": "10 Days Ultra Luxury Bhutan Himalayan Retreat",
+        "category": "luxury",
+        "days": 10,
+        "duration": "10 Days",
+        "travelers": "2-8",
+        "rating": "5.0",
+        "image": "/tour/img/ultra-luxury-bhutan.avif",
+        "highlights": [
+            "Stay at Bhutan’s finest luxury lodges and resorts",
+            "Private helicopter and exclusive scenic drives",
+            "Personalized cultural and spiritual experiences",
+            "Premium wellness, spa and meditation sessions",
+            "Luxury guided excursions across Paro, Thimphu, Punakha and Gangtey"
+        ],
+        "itinerary": [
+            {
+                "day": 1,
+                "title": "Arrival in Paro",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Arrival", "description": "VIP arrival assistance and luxury transfer to resort." },
+                    { "time": "Evening", "description": "Private welcome dinner with traditional Bhutanese performance." }
+                ]
+            },
+            {
+                "day": 2,
+                "title": "Paro Exclusive Exploration",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Visit Rinpung Dzong and Kyichu Lhakhang with expert guide." },
+                    { "time": "Afternoon", "description": "Luxury farmhouse visit with authentic Bhutanese cuisine." }
+                ]
+            },
+            {
+                "day": 3,
+                "title": "Helicopter Scenic Experience & Thimphu Transfer",
+                "location": "Thimphu",
+                "activities": [
+                    { "time": "Morning", "description": "Optional helicopter scenic flight over Himalayan valleys." },
+                    { "time": "Afternoon", "description": "Transfer to Thimphu and check-in at premium luxury hotel." }
+                ]
+            },
+            {
+                "day": 4,
+                "title": "Thimphu Cultural & Wellness Day",
+                "location": "Thimphu",
+                "activities": [
+                    { "time": "Morning", "description": "Visit Buddha Dordenma and Tashichho Dzong privately." },
+                    { "time": "Afternoon", "description": "Luxury spa therapy and guided meditation session." }
+                ]
+            },
+            {
+                "day": 5,
+                "title": "Thimphu to Punakha",
+                "location": "Punakha",
+                "activities": [
+                    { "time": "Drive", "description": "Scenic drive via Dochula Pass with champagne picnic." },
+                    { "time": "Sightseeing", "description": "Explore Punakha Dzong and valley viewpoints." }
+                ]
+            },
+            {
+                "day": 6,
+                "title": "Punakha Valley Luxury Experience",
+                "location": "Punakha",
+                "activities": [
+                    { "time": "Morning", "description": "Private hike to Khamsum Yulley Namgyal Chorten." },
+                    { "time": "Afternoon", "description": "Optional rafting or wellness spa at resort." }
+                ]
+            },
+            {
+                "day": 7,
+                "title": "Punakha to Gangtey",
+                "location": "Gangtey",
+                "activities": [
+                    { "time": "Drive", "description": "Luxury drive to Gangtey with scenic stops." },
+                    { "time": "Monastery", "description": "Visit Gangtey Monastery and explore Phobjikha Valley." }
+                ]
+            },
+            {
+                "day": 8,
+                "title": "Gangtey Nature & Birding Experience",
+                "location": "Gangtey",
+                "activities": [
+                    { "time": "Morning", "description": "Nature trail walk with private naturalist guide." },
+                    { "time": "Afternoon", "description": "Relaxation at luxury lodge with valley views." }
+                ]
+            },
+            {
+                "day": 9,
+                "title": "Return to Paro & Tiger’s Nest Excursion",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Drive back to Paro and prepare for Tiger’s Nest hike." },
+                    { "time": "Afternoon", "description": "Guided hike to Taktsang Monastery with premium picnic lunch." }
+                ]
+            },
+            {
+                "day": 10,
+                "title": "Departure from Paro",
+                "location": "Paro",
+                "activities": [
+                    { "time": "Morning", "description": "Leisure breakfast and private luxury airport transfer." },
+                    { "time": "Departure", "description": "VIP departure assistance and end of luxury retreat." }
+                ]
+            }
+        ],
+        "includes": [
+            "Ultra-luxury 5-star lodges and resorts",
+            "Private luxury transport and optional helicopter experience",
+            "All gourmet meals and fine dining",
+            "Professional private guide and concierge service",
+            "Spa, wellness and meditation sessions",
+            "All permits, entrance fees and government taxes"
+        ],
+        "excludes": [
+            "International flights",
+            "Travel insurance",
+            "Personal expenses and premium beverages",
+            "Tips and gratuities"
+        ]
     }
-
-
-
-
-
-
-
-
-
-
-
 ];
 
 export default tourdata;

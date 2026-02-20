@@ -7,7 +7,7 @@ import { useEffect, useRef, useState, useCallback, memo } from 'react';
 /* -------------------- CONFIG -------------------- */
 const BACKGROUNDS = [
     {
-        url: 'https://www.amenbhutan.com/_next/image?url=https%3A%2F%2Famen-api.flamingoitstudio.net%2Fmedia%2Fcarousel%2FDiscover%20the%20Bhutan.jpg&w=1920&q=75',
+        url: '/tour/img/DiscovertheBhutan.avif',
         alt: 'Scenic view of Paro Taktsang (Tiger\'s Nest Monastery) perched on a cliff in Bhutan'
     },
     // Add more backgrounds as needed
