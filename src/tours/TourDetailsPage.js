@@ -100,6 +100,8 @@ export default function TourDetailsPage({ tour }) {
     }, []);
 
     const handleShare = useCallback(async () => {
+        if (!tour) return;
+
         if (navigator.share) {
             try {
                 await navigator.share({
@@ -108,16 +110,20 @@ export default function TourDetailsPage({ tour }) {
                     url: window.location.href,
                 });
             } catch (err) {
+                // user cancelled share or error
                 setShowShareTooltip(true);
                 setTimeout(() => setShowShareTooltip(false), 2000);
             }
         } else {
-            // Fallback
-            navigator.clipboard.writeText(window.location.href);
-            setShowShareTooltip(true);
-            setTimeout(() => setShowShareTooltip(false), 2000);
+            try {
+                await navigator.clipboard.writeText(window.location.href);
+                setShowShareTooltip(true);
+                setTimeout(() => setShowShareTooltip(false), 2000);
+            } catch (err) {
+                console.error("Clipboard copy failed:", err);
+            }
         }
-    }, [tour.title]);
+    }, [tour]);
 
     if (!tour) {
         return (
