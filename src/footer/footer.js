@@ -122,11 +122,30 @@ export default function Footer() {
     ];
 
     const socialLinks = [
-        { name: "Instagram", icon: Instagram, href: "#", color: "from-pink-500 to-red-500" },
-        { name: "Facebook", icon: Facebook, href: "#", color: "from-blue-600 to-indigo-600" },
-        { name: "YouTube", icon: Youtube, href: "#", color: "from-red-600 to-rose-600" },
-        { name: "LinkedIn", icon: Linkedin, href: "#", color: "from-blue-500 to-cyan-500" },
-        { name: "Twitter", icon: Twitter, href: "#", color: "from-sky-400 to-blue-400" }
+        {
+            name: "Instagram",
+            icon: Instagram,
+            href: "https://www.instagram.com/alpineodysseytours",
+            color: "from-pink-500 to-red-500",
+        },
+        {
+            name: "Facebook",
+            icon: Facebook,
+            href: "https://www.facebook.com/share/14cA1pSYdZs/",
+            color: "from-blue-600 to-indigo-600",
+        },
+        {
+            name: "LinkedIn",
+            icon: Linkedin,
+            href: "https://www.linkedin.com/in/jigme-dorji-0b8b94231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", // add actual company page later
+            color: "from-blue-500 to-cyan-500",
+        },
+        {
+            name: "Twitter",
+            icon: Twitter,
+            href: "https://x.com/AlpineOdys17275",
+            color: "from-sky-400 to-blue-400",
+        },
     ];
 
     const contactInfo = [

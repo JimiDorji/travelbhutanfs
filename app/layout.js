@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 // Separate metadata export (without viewport)
 export const metadata = {
-  title: "alpineodyssey - TravelBhutan",
+  title: "Alpine Odyssey",
   description:
     "Explore the Beauty of Bhutan with alpineodyssey - Your Ultimate Guide to the Land of the Thunder Dragon.",
 };

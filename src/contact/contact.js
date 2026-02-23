@@ -602,7 +602,7 @@ export default function Contact() {
                         >
                             <iframe
                                 title="Bhutan Office Map"
-                                src="https://www.google.com/maps?q=Thimphu,Bhutan&output=embed"
+                                src="https://www.google.com/maps?q=649+Olakha+Lam+SE,+Thimphu,+Bhutan&output=embed"
                                 className="h-80 w-full border-0"
                                 loading="lazy"
                                 allowFullScreen

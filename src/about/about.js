@@ -121,7 +121,7 @@ export default function About() {
     const team = [
         {
             name: "Jigme Dorji",
-            role: "Founder & Lead Guide",
+            role: "Founder & Lead",
             bio: "With over 4 years of Himalayan exploration, Jigme has led countless expeditions across Bhutan's most remote valleys.",
             image: "/team/img/jigme.jpeg",
             expertise: ["Cultural Heritage", "Expedition Leadership", "Conservation"],

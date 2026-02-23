@@ -61,6 +61,11 @@ export default function TourDetailsPage({ tour }) {
     const sectionRefs = useRef({});
     const headerRef = useRef(null);
     const [scrollProgress, setScrollProgress] = useState(0);
+    const [reviewCount, setReviewCount] = useState(null);
+
+    useEffect(() => {
+        setReviewCount(Math.floor(Math.random() * 100) + 50);
+    }, []);
 
 
     // Handle scroll effects
@@ -166,7 +171,7 @@ export default function TourDetailsPage({ tour }) {
                     <div className="flex items-center justify-between">
                         <div className="flex items-center gap-4">
                             <Link
-                                href="/tours"
+                                href="/"
                                 className="group flex items-center gap-2 rounded-lg px-3 py-2 text-white/60 transition-all hover:bg-white/10 hover:text-cyan-400"
                             >
                                 <ChevronLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
@@ -177,7 +182,7 @@ export default function TourDetailsPage({ tour }) {
                             <nav className="hidden md:flex items-center gap-2 text-sm">
                                 <Link href="/" className="text-white/40 hover:text-white/60">Home</Link>
                                 <ChevronRight className="h-3 w-3 text-white/20" />
-                                <Link href="/tours" className="text-white/40 hover:text-white/60">Tours</Link>
+                                <Link href="/" className="text-white/40 hover:text-white/60">Tours</Link>
                                 <ChevronRight className="h-3 w-3 text-white/20" />
                                 <span className="text-white/80">{tour.title}</span>
                             </nav>
@@ -315,7 +320,7 @@ export default function TourDetailsPage({ tour }) {
                                             ))}
                                         </div>
                                         <span className="text-white/60">
-                                            {tour.rating} ({Math.floor(Math.random() * 100) + 50} reviews)
+                                            {tour.rating} ({reviewCount ?? 75} reviews)
                                         </span>
                                     </div>
                                 </div>
