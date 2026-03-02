@@ -35,7 +35,7 @@ export default function Header() {
             window.dispatchEvent(new CustomEvent("tourCategory", { detail: "all" }));
         }
 
-        const element = document.getElementById("tours");
+        const element = document.getElementById(id);
         if (!element) return;
 
         window.scrollTo({
